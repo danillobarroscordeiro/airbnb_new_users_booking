@@ -1,15 +1,15 @@
-# Health insurance cross-sell
+# Airbnb New User Bookings
 ![](reports/figures/airbnb.jpg)
 
 ## 1. Introduction
 This is an end-to-end data science project which a classification algorithm was used to rank the first country of destination of a new user.
 
-# 2. Business Problem.
+# 2. Business Problem
 
 Airbnb would like to know which country of destination a new user will book so the company could share more personalized content with their communitiy, better forecast demand and decrease average time to first booking.
 
 
-# 3. Business Assumptions.
+# 3. Business Assumptions
 
 * No destination Found (NDF) is also a possible outcome for the problem, which means that model did not found yet which country of destination a new user will book.
 * In the column date_first_booking, we considered that the date of this first booking would be the same of the date the users create their account in case the user did not make their first booking yet.
@@ -30,7 +30,7 @@ Dataset contains 213,415 rows and 16 columns and it contains the following varia
 
 * id - Unique ID for the customer
 
-* Gender - 	Gender of the customer
+* Gender - Gender of the customer
 
 * Age -	Age of the customer
 
@@ -138,28 +138,17 @@ It was chosen XGBoost model and below one can see its performance with hiperpara
 
 
 # 9. Business Results
-It is possible to simulate some scenarios based on the capacity of the company to make contact with clients, since there are some costs in archieving them.
 
-if the company could just contacting 30% of all their clients (assume this percetage is 20,000 clients), the model will rank the clients with best probability of getting the car insurance and approximately 70% (14,000) of these chosen clients would be interested in acquiring the car insurance.
+Since Airbnb can predict better which destination country a new user will make a booking, Airbnb could implement marketing strategies specific for these countries such as offering discounts so it could attract more users and increase its booking rate.
 
-# 10. Conclusions
-
-The model did a good job in selecting clients for the company to make a cross-sell sale. It helps company reduce its costs of contacting a client as it will be more selective in which clients it should contact. Also the model would increase company revenue as they would select probably clients to acquire its car insurance.
+Also, Airbnb could plan which countries they should have more accomodation-providers to fullfil its demand
 
 
-# 11. Next Steps to Improve
+# 10. Next Steps to Improve
 
 The next CRISP-DM circle one can do the following:
 
-* Trying to get more features about the client as their income, number of family members, their jobs.
-* Trying to get more features about their cars, how many cars they have for instance.
-* Training another models such as LightGBM and Support Vector Machine (SVM) to check whether performance could be improved.
-
-
-
-
-
-# 9. Lessons Learned
-
-# 10. Next Steps to Improve
+* Using dataset of users sessions to get more data and new features that may improve performance.
+* Getting more data which new users first booking is others country of destination.
+* Create new features
 
